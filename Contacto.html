@@ -6,43 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <header>
-        <img src="imagenes/logo-header-LM.png" height="300" width="300" alt="logo de LM">
+
+
+    <header class="header">
+        <div class="logotipo-principal">
+            <img src="imagenes/Logo-LM.png" height="70" width="70" alt="logo de LM">
+        </div>
+
 
         <!-- menu de la empresa -->
 
         <nav>
 
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li> <a href="Nosotros.html">Nosotros</a></li>
-                <li> <a href="Servicios.html">Servicios</a></li>
-                <li> <a href="Contacto.html">Contacto</a></li>
+
+            <ul class="nav__lista">
+                <li class="nav__item"> <a class="nav__enlaces" href="index.html">Inicio</a></li>
+                <li class="nav__item"> <a class="nav__enlaces" href="Nosotros.html">Nosotros</a></li>
+                <li class="nav__item"> <a class="nav__enlaces" href="Servicios.html">Servicios</a></li>
+                <li class="nav__item"> <a class="nav__enlaces" href="Contacto.html">Contacto</a></li>
             </ul>
+
         </nav>
 
-        <br>
-
-        <div>
-            <!-- redes sociales -->
-            <img src="imagenes/logo-facebook.jpg" height="50" width="50" alt="logo facebook">
-            <img src="imagenes/logo-instagram.png" height="50" width="50" alt="logo logo-instagram">
-            <img src="imagenes/logo-twitter.jpg" height="50" width="50" alt="logo twitter">
-        </div>
-
-
-
-
     </header>
+
 
     <main>
 
 
         <section>
-            <form action="Aca iria la ubicacion a donde irian los datos" method="post" ></form>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <form action="Aca iria la ubicacion a donde irian los datos" method="post"></form>
             <div>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" placeholder="Ingresar su nombre completo..." name="nombre">
@@ -59,27 +58,42 @@
                 <textarea name="comentario" id="comentario" placeholder="Ingresar su comentario..." cols="30"
                     rows="10"></textarea>
             </div>
-           
-                <button type="submit">Enviar consulta</button>
-              
+
+            <button type="submit">Enviar consulta</button>
+
 
         </section>
+
+        <br><br><br><br><br><br>
     </main>
-    
-    <br><br><br><br>
 
-    <footer>
-        <img src="imagenes/logo-header-LMsoluciones.png" width="100" height="100" alt="logotipo">
 
-        <ul>
-            <li><a href="">Unite a Nuestro Equipo</a></li>
-            <li><a href="">Sucursales</a></li>
+    <footer class="footer">
+        <img class="logotipo__footer" src="imagenes/Logo-LM.png" width="80" height="80" alt="logotipo">
 
-        </ul>
+        <p class="footer__texto">© 2022 LM Soluciones-Informaticas Inc.</p>
+        <div class="enlaces__items">
+            <ul class="enlaces__footer">
+                <li><a class="enlace1__footer" href="">Unite a Nuestro Equipo</a></li>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus saepe suscipit labore
-            facilis illum minus alias,
-            molestias velit reiciendis, cumque, ut adipisci quam. Maiores, autem? Aut vel officiis quasi?</p>
+                <li><a class="enlace2__footer" href="">Sucursales</a></li>
+
+            </ul>
+        </div>
+
+        <div class="footer__redes">
+
+            <div> <a href="https://www.facebook.com/"><img src="imagenes/logo-facebook.png" height="40" width="40"
+                        alt="logo facebook"></a>
+            </div>
+            <div> <a href="https://www.instagram.com/"><img src="imagenes/logo-instagram.png" height="40" width="40"
+                        alt="logo instagram"> </a> </div>
+
+            <div><a href="https://www.whatsapp.com/"><img src="imagenes/logo-whatsapp.png" height="40" width="40"
+                        alt="logo whatsapp"></a>
+
+            </div>
+
 
     </footer>
 </body>
