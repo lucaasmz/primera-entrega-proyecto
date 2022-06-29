@@ -351,7 +351,7 @@ ul {
 
 
 .carousel-item {
-    height: 650px;
+    height: 600px;
     object-fit: cover;
     margin-left: 0;
 }
@@ -397,12 +397,12 @@ h5 {
 
 /* seccion infraestructura */
 .seccion_servicios {
-   
+
     width: 96%;
     margin-top: 2rem;
     margin-left: 2%;
     margin-right: 2%;
-  
+
 
 }
 
@@ -428,23 +428,24 @@ h5 {
     height: 300px;
 }
 
-.seccion_sistemas{
+.seccion_sistemas {
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.accordion-button{
+.accordion-button {
     font-size: 24px;
 }
 
-.accordion-body{
+.accordion-body {
     font-size: 20px;
 }
 
-.seccion_consultoria{
+.seccion_consultoria {
     margin-bottom: 5rem;
 }
+
 /* Creando una Media Query para aplicar cambios necesarios para las vistas pequeñas tablet y mobile */
 
 
@@ -452,8 +453,26 @@ h5 {
 
 @media (max-width: 1023px) {
 
+
+    .header img {
+        width: 100px;
+        object-fit: unset;
+    }
+
+    .nav__lista {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        font-size: 14px;
+
+    }
+
+
+
     .seccion1 {
-        background-size: 100%;
+        background-size: 1000px 600px;
+        width: fill-available;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
@@ -518,8 +537,134 @@ h5 {
         padding: 0 1rem 0 0;
         margin: 0 0 0 0;
     }
+
+    .h5carrusel{
+        margin: 0 0 1rem 0;
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    .carousel-caption {
+        font-size: 16px;
+        margin: 0 0 4rem 0;
+        padding: 0;
+        
+        }
 }
 
 
 
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+
+    img,
+    iframe,
+    video {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .header img {
+        width: 100px;
+        object-fit: unset;
+    }
+
+    .header {
+        width: fill-available;
+    }
+
+    .nav__lista {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        font-size: 14px;
+
+    }
+
+
+    .seccion1 {
+        width: fill-available;
+        background-size: 800px 600px;
+        background-color: green;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 6rem 2rem 2rem 2rem;
+        margin: 0;
+    }
+
+    .seccion1_izquierda {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .seccion2 {
+
+        background-size: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 0 0 2rem;
+
+    }
+
+    .seccion2__derecha {
+        width: auto;
+        height: auto;
+
+
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 0 0 0 2rem;
+
+    }
+
+    .seccion2__titulo1 {
+        width: 400px;
+
+        font-size: 45px;
+        margin-left: 10px;
+        text-align: center;
+        padding: 0 0 0 0;
+
+    }
+
+    .seccion2__titulo2 {
+
+        width: 400px;
+
+        font-size: 22.5px;
+        text-align: center;
+        padding: 0 0 0 0;
+    }
+
+    .seccion2__texto {
+        width: 400px;
+
+        font-size: 16px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .footer img{
+        width:50px;
+    }
+    .enlaces__items{
+        font-size: 10px;
+       width: 50px;
+       margin-left: 2rem;
+    }
+    .footer__redes {
+        width: auto;
+        padding: 0 1rem 0 0;
+        margin: 0 0 0 0;
+    }
+
+    .h5carrusel{
+        font-size: smaller;
+    }
+    .carousel-caption {
+        margin: 0;
+        padding: 0;
+        
+        }
+}
