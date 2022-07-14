@@ -448,6 +448,11 @@ h5 {
 
 /* Creando una Media Query para aplicar cambios necesarios para las vistas pequeñas tablet y mobile */
 
+.headernuevo{
+    position: fixed;
+    z-index: 100;
+    background-color: red;
+}
 
 
 
@@ -455,7 +460,7 @@ h5 {
 
 
     .header img {
-        width: 100px;
+        width: 75px;
         object-fit: unset;
     }
 
@@ -469,10 +474,9 @@ h5 {
     }
 
 
-
     .seccion1 {
-        background-size: 1000px 600px;
-        width: fill-available;
+        background-size: 1200px 800px;
+        width: initial;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
@@ -538,7 +542,11 @@ h5 {
         margin: 0 0 0 0;
     }
 
-    .h5carrusel{
+    .nosotros__banner {
+        visibility: hidden;
+    }
+
+    .h5carrusel {
         margin: 0 0 1rem 0;
         padding: 0;
         font-size: 2rem;
@@ -548,49 +556,64 @@ h5 {
         font-size: 16px;
         margin: 0 0 4rem 0;
         padding: 0;
-        
-        }
+
+    }
 }
 
 
 
 @media (max-width: 600px) {
 
-    img,
-    iframe,
-    video {
-        width: 100%;
-        object-fit: cover;
-    }
-
     .header img {
-        width: 100px;
+        width: 50px;
+        height: 50px;
         object-fit: unset;
+        padding-left: 0;
     }
 
-    .header {
-        width: fill-available;
-    }
+ .header{
+    justify-content: left;
+ }
+
 
     .nav__lista {
         list-style: none;
         display: flex;
         flex-direction: row;
-        gap: 1.5rem;
-        font-size: 14px;
+        gap: 0;
+        padding: 0;
+        font-size: 12px;
 
+    }
+
+    .nav__item {
+        padding: 0;
+        margin: 0 10px;
     }
 
 
     .seccion1 {
-        width: fill-available;
-        background-size: 800px 600px;
-        background-color: green;
+        background-image: none;
+        background-color: white;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        padding: 6rem 2rem 2rem 2rem;
+        padding: 6rem 4rem 2rem 2rem;
         margin: 0;
+    }
+
+    .seccion1_servicios{
+        font-size: 12px;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .seccion1_titulo1{
+        font-size: 2.5rem;
+    }
+    .seccion1_titulo2{
+        font-size: 2.5rem;
     }
 
     .seccion1_izquierda {
@@ -599,72 +622,89 @@ h5 {
     }
 
     .seccion2 {
-
-        background-size: 100%;
+        background-image: none;
+        background-color: #0a0a0a;
+        width: fit-content;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        padding: 0 0 0 2rem;
-
+        margin-right: 0;
+        padding: 0 1rem 0 0;
+    
     }
-
+    
+    
     .seccion2__derecha {
         width: auto;
         height: auto;
-
-
-        padding: 1rem 1rem 1rem 1rem;
-        margin: 0 0 0 2rem;
-
+        padding: 0;
+        margin: 0 0 0 0;
+    
     }
-
+    
     .seccion2__titulo1 {
-        width: 400px;
-
-        font-size: 45px;
-        margin-left: 10px;
+    
+        font-size: 40px;
+        margin: 0;
         text-align: center;
         padding: 0 0 0 0;
-
+    
     }
-
+    
     .seccion2__titulo2 {
-
+    
         width: 400px;
-
+    
         font-size: 22.5px;
         text-align: center;
         padding: 0 0 0 0;
+        margin-right: 0;
+        margin-left: 0;
     }
-
+    
     .seccion2__texto {
-        width: 400px;
-
-        font-size: 16px;
-        margin: 0 0 0 0;
+        width: 350px;
+        font-size: 14px;
+        margin: 0 1.5rem 0 0;
         padding: 0 0 0 0;
     }
 
-    .footer img{
-        width:50px;
+
+    .seccion3 {
+        width: fit-content;
     }
-    .enlaces__items{
+    
+    .footer img {
+        width: 50px;
+    }
+    
+    .enlaces__items {
         font-size: 10px;
-       width: 50px;
-       margin-left: 2rem;
+        width: 50px;
+        margin-left: 2rem;
     }
+    
     .footer__redes {
         width: auto;
         padding: 0 1rem 0 0;
         margin: 0 0 0 0;
     }
-
-    .h5carrusel{
+    
+    .h5carrusel {
         font-size: smaller;
     }
+    
     .carousel-caption {
         margin: 0;
         padding: 0;
-        
-        }
+    
+    }
+    
+}
+
+
+.imgcarousel{
+    padding-top: 20rem;
+    width: 800px;
+    height: 800px;
 }
