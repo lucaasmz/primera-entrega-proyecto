@@ -8,6 +8,10 @@ main {
     min-height: 100vh;
 }
 
+body {
+    max-width: 100% 
+    
+}
 
 
 /*estilos del Header  */
@@ -446,9 +450,18 @@ h5 {
     margin-bottom: 5rem;
 }
 
+.contacto1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.formulario{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 /* Creando una Media Query para aplicar cambios necesarios para las vistas pequeñas tablet y mobile */
 
-.headernuevo{
+.headernuevo {
     position: fixed;
     z-index: 100;
     background-color: red;
@@ -571,9 +584,9 @@ h5 {
         padding-left: 0;
     }
 
- .header{
-    justify-content: left;
- }
+    .header {
+        justify-content: space-around;
+    }
 
 
     .nav__lista {
@@ -602,17 +615,18 @@ h5 {
         margin: 0;
     }
 
-    .seccion1_servicios{
+    .seccion1_servicios {
         font-size: 12px;
         text-align: left;
         padding: 0;
         margin: 0;
     }
 
-    .seccion1_titulo1{
+    .seccion1_titulo1 {
         font-size: 2.5rem;
     }
-    .seccion1_titulo2{
+
+    .seccion1_titulo2 {
         font-size: 2.5rem;
     }
 
@@ -624,44 +638,46 @@ h5 {
     .seccion2 {
         background-image: none;
         background-color: #0a0a0a;
-        width: fit-content;
+        width: 100%;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
         margin-right: 0;
         padding: 0 1rem 0 0;
-    
+        
+
     }
-    
-    
+
+
     .seccion2__derecha {
         width: auto;
         height: auto;
         padding: 0;
         margin: 0 0 0 0;
-    
+        text-align: left;
+
     }
-    
+
     .seccion2__titulo1 {
-    
+
         font-size: 40px;
         margin: 0;
         text-align: center;
         padding: 0 0 0 0;
-    
+
     }
-    
+
     .seccion2__titulo2 {
-    
+
         width: 400px;
-    
+
         font-size: 22.5px;
         text-align: center;
         padding: 0 0 0 0;
         margin-right: 0;
         margin-left: 0;
     }
-    
+
     .seccion2__texto {
         width: 350px;
         font-size: 14px;
@@ -669,41 +685,62 @@ h5 {
         padding: 0 0 0 0;
     }
 
+.seccion3__texto{
+    text-align: center;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+}
+
 
     .seccion3 {
-        width: fit-content;
+        width: 100%;
     }
-    
+
+    .seccion3__imagen{
+        width: 300px;
+        height: 200px;
+        margin-left: 5rem;
+    }
+
+.footer{
+    max-width: 100%;
+    background-size: cover;
+}
     .footer img {
         width: 50px;
     }
-    
+
     .enlaces__items {
         font-size: 10px;
-        width: 50px;
+        width: 30px;
+        height: 30px;
         margin-left: 2rem;
     }
-    
+    .footer__redes img{
+        width: 20px;
+
+    }
     .footer__redes {
+        background-color: #0a0a0a;
         width: auto;
         padding: 0 1rem 0 0;
         margin: 0 0 0 0;
     }
-    
+
     .h5carrusel {
         font-size: smaller;
     }
-    
+
     .carousel-caption {
         margin: 0;
         padding: 0;
-    
+
     }
-    
+
 }
 
 
-.imgcarousel{
+.imgcarousel {
     padding-top: 20rem;
     width: 800px;
     height: 800px;
