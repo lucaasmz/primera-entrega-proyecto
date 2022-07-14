@@ -735,6 +735,23 @@ h5 {
         margin: 0;
         padding: 0;
 
+    } 
+
+    .nosotros img{ 
+        visibility: hidden;
+        
+    }
+    .nosotros__titulo{
+        padding: 0 0 2rem 17rem;
+        margin: 0;
+        font-size: 60px;
+
+    }
+
+    .nosotros__texto{
+        padding: 0 0 0 17rem;
+        margin: 0;
+        font-size: 20px;
     }
 
 }
