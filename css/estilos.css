@@ -9,8 +9,7 @@ main {
 }
 
 body {
-    max-width: 100% 
-    
+    max-width: 100%
 }
 
 
@@ -18,20 +17,21 @@ body {
 
 .header {
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 1) 49%, rgba(2, 36, 105, 1) 100%);
+    top: 0;
+    left: 0;
     position: fixed;
     z-index: 100;
     width: 100%;
-    height: 55px;
+    min-height: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 1rem 0 0;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
-
 
 
 
@@ -43,6 +43,9 @@ body {
 
 }
 
+.nav__item_boot {
+    margin-top: 1rem;
+}
 
 .nav__item {
 
@@ -61,11 +64,8 @@ body {
     background-image: url("../imagenes/imagen-stock-section1.png");
     background-size: 1600px 650px;
     background-repeat: no-repeat;
-    width: 100%;
     min-height: 400px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 8rem 6rem 2rem 8rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -75,7 +75,6 @@ body {
 .seccion1_izquierda {
     display: flex;
     flex-direction: column;
-
 }
 
 .seccion1_servicios {
@@ -141,7 +140,7 @@ body {
 
 
 .seccion2 {
-    width: 100%;
+
     background-color: #0a0a0a;
     background-image: url('../imagenes/fotostock-seccion2.png');
     background-size: 1200px 600px;
@@ -236,7 +235,6 @@ body {
 .footer {
     background-color: #0a0a0a;
     position: absolute;
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -249,7 +247,6 @@ body {
 }
 
 .enlaces__items {
-    width: 180px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -280,8 +277,6 @@ body {
 
     text-decoration: none;
     color: #ffffff;
-
-
 }
 
 .footer__texto {
@@ -296,7 +291,7 @@ body {
     flex-direction: row;
     color: white;
     padding-left: 8rem;
-    margin-right: 0;
+    margin-right: 4rem;
 }
 
 /* pagina nosotros */
@@ -344,11 +339,7 @@ body {
 
 }
 
-/* header bootsrap */
 
-ul {
-    margin-bottom: 0;
-}
 
 /* Manejando carrusel */
 
@@ -395,17 +386,18 @@ h5 {
     --bs-btn-active-color: var(--bs-btn-hover-color);
     --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
     --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
-
-
 }
 
 /* seccion infraestructura */
-.seccion_servicios {
 
-    width: 96%;
+body {
+    overflow-x: hidden;
+}
+
+.seccion_servicios {
+    width: 95%;
     margin-top: 2rem;
     margin-left: 2%;
-    margin-right: 2%;
 
 
 }
@@ -450,22 +442,25 @@ h5 {
     margin-bottom: 5rem;
 }
 
-.contacto1{
+.contacto1 {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.formulario{
+
+.formulario {
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.map_responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 /* Creando una Media Query para aplicar cambios necesarios para las vistas pequeñas tablet y mobile */
-
-.headernuevo {
-    position: fixed;
-    z-index: 100;
-    background-color: red;
-}
 
 
 
@@ -577,6 +572,10 @@ h5 {
 
 @media (max-width: 600px) {
 
+    body {
+        width: 100%;
+    }
+
     .header img {
         width: 50px;
         height: 50px;
@@ -585,7 +584,8 @@ h5 {
     }
 
     .header {
-        justify-content: space-around;
+        justify-content: space-between;
+        
     }
 
 
@@ -638,74 +638,70 @@ h5 {
     .seccion2 {
         background-image: none;
         background-color: #0a0a0a;
-        width: 100%;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        margin-right: 0;
-        padding: 0 1rem 0 0;
-        
-
+        margin: 0;
+        padding: 0 0 0 0;
+        width: auto;
     }
 
 
     .seccion2__derecha {
-        width: auto;
-        height: auto;
-        padding: 0;
+
+width: 300px;
         margin: 0 0 0 0;
         text-align: left;
 
     }
 
     .seccion2__titulo1 {
-
-        font-size: 40px;
-        margin: 0;
+width: fit-content;
+        font-size: 30px;
+        margin: 0 0 0 0;
         text-align: center;
-        padding: 0 0 0 0;
+        padding: 0 1rem 0 0;
 
     }
 
     .seccion2__titulo2 {
-
-        width: 400px;
-
-        font-size: 22.5px;
+width: fit-content;
+        font-size: 15px;
         text-align: center;
-        padding: 0 0 0 0;
+        padding: 0 1rem 0 0;
         margin-right: 0;
         margin-left: 0;
     }
 
     .seccion2__texto {
-        width: 350px;
-        font-size: 14px;
-        margin: 0 1.5rem 0 0;
+        font-size: 12px;
+        width: 250px;
+        margin: 0 0 0 0;
         padding: 0 0 0 0;
     }
 
-.seccion3__texto{
-    text-align: center;
-    padding-left: 4rem;
-    padding-bottom: 2rem;
-}
+    .seccion3__texto {
+        text-align: center;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
 
 
     .seccion3 {
         width: 100%;
     }
 
-    .seccion3__imagen{
-        width: 300px;
+    .seccion3__imagen {
+        width: 260px;
         height: 200px;
-        margin-left: 5rem;
+
     }
 
-.footer{
-    max-width: 100%;
-    background-size: cover;
-}
+    .footer {
+        max-width: 100%;
+        background-size: cover;
+    }
+
     .footer img {
         width: 50px;
     }
@@ -716,15 +712,18 @@ h5 {
         height: 30px;
         margin-left: 2rem;
     }
-    .footer__redes img{
+
+    .footer__redes img {
         width: 20px;
 
     }
+
     .footer__redes {
-        background-color: #0a0a0a;
-        width: auto;
-        padding: 0 1rem 0 0;
+        
+        padding: 0 0 0 0;
         margin: 0 0 0 0;
+        max-width: fit-content;
+
     }
 
     .h5carrusel {
@@ -735,20 +734,21 @@ h5 {
         margin: 0;
         padding: 0;
 
-    } 
-
-    .nosotros img{ 
-        visibility: hidden;
-        
     }
-    .nosotros__titulo{
+
+    .nosotros img {
+        visibility: hidden;
+
+    }
+
+    .nosotros__titulo {
         padding: 0 0 2rem 17rem;
         margin: 0;
         font-size: 60px;
 
     }
 
-    .nosotros__texto{
+    .nosotros__texto {
         padding: 0 0 0 17rem;
         margin: 0;
         font-size: 20px;
